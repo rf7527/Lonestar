@@ -1,0 +1,24 @@
+mixin nav-content()
+  ul
+    li: a(href="#about") About
+    li: a(href="#services") Services
+    li: a(href="#tour") Tour
+    li: a(href="#testimonials") Testimonials
+    li: a(href="#news") Latest News
+    li: a(href="#contact") Contact
+    li: a(href="#forms") Patient Forms
+
+.mobile-nav
+  +nav-content()
+
+header
+  .header-position
+    h1.logo Vet Logo Demo
+    
+    nav.site-nav
+      +nav-content()
+      
+
+    a(href="mailto:clinic@gmail.com").email-link +email us
+  
+    .mobile-nav-toggle: span
